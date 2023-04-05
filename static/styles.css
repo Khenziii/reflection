@@ -1,0 +1,8 @@
+.canvases {
+    background-color: aqua;
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+  }  
