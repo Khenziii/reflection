@@ -1,4 +1,25 @@
 const canvas = document.getElementById('canvas');
+const slider = document.getElementById('slider');
+const firstUI = document.getElementById('firstUI')
+
+function changepensize()
+{
+    console.log("changing the pen size!")
+
+    const rect = firstUI.getBoundingClientRect();
+    slider.style.left = `calc(\${rect.left}px + \${rect.width / 2}px)`;
+    slider.style.display = slider.style.display === 'none' ? 'block' : 'none';
+}
+
+function changepencolor()
+{
+    console.log("changing the pen color!")
+}
+
+function rubber()
+{
+    console.log("changing the rubber status!")
+}
 
 // Set the actual size of the canvas element to match the CSS size
 canvas.width = canvas.offsetWidth;

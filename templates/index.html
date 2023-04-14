@@ -12,20 +12,21 @@
   <div class="line"></div>
 
   <ul class="UIs" id="UI">
-    <li>
-      <a onclick="firstfunction()">
+    <li id="firstUI">
+      <input type="range" min="1" max="100" value="50" class="sliders" id="slider">
+      <a onclick="changepensize()">
         <img src="../static/textures/pen.png">
       </a>
     </li>
 
     <li>
-      <a onclick="secondfunction()">
+      <a onclick="changepencolor()">
         <img src="../static/textures/set_colour.png">
       </a>
     </li>
 
     <li>
-      <a onclick="thirdfunction()">
+      <a onclick="rubber()">
         <img src="../static/textures/eraser.png">
       </a>
     </li>
