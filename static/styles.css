@@ -3,7 +3,7 @@ body {
 }
 
 .line {
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -12,7 +12,7 @@ body {
     width: 1.5vw;
     height: 100%;
 
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 .canvases {
@@ -42,5 +42,13 @@ body {
     display: none;
     position: fixed;
     left: 5vw;
-    transform: translateX(-50%) translateY(calc(-100% - 50%));
+    transform: translateX(-50%);
+    top: -1vw;
+}
+
+.checkboxs {
+    display: none;
+    position: fixed;
+    top: -1vw;
+    left: 22vw;
 }

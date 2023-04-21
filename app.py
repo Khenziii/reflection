@@ -3,7 +3,7 @@ from flask_socketio import SocketIO, emit
 
 #app = Flask(__name__)
 app = Flask(__name__, static_folder='static')
-app.config['SECRET_KEY'] = 'damn'
+app.config['SECRET_KEY'] = 'dayem'
 
 
 @app.route('/')
