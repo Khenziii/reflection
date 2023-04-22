@@ -52,3 +52,10 @@ body {
     top: -1vw;
     left: 22vw;
 }
+
+.colors-pickers {
+    display: none;
+    position: fixed;
+    top: -1.5vw;
+    left: 12vw;
+}

@@ -1,6 +1,8 @@
 const canvas = document.getElementById('canvas');
 const slider = document.getElementById('slider');
-const firstUI = document.getElementById('firstUI')
+const firstUI = document.getElementById('firstUI');
+const colorpicker = document.getElementById('color-picker');
+const secondUI = document.getElementById('secondUI');
 const checkbox = document.getElementById('checkbox');
 const thirdUI = document.getElementById('thirdUI');
 
@@ -13,7 +15,7 @@ function changepensize() {
 }
 
 function changepencolor() {
-    console.log("changing the pen color!")
+    colorpicker.style.display = colorpicker.style.display === 'none' ? 'block' : 'none';
 }
 
 function rubber() {
@@ -50,13 +52,15 @@ function draw(event) {
     // Update the pixel's background color to black on the left side
     const pixel = canvas.getContext('2d');
 
-    print(checkbox.value)
+    //if
 
-    if (checkbox.value == true) {
+    //console.log(checkbox.checked)
+    if (checkbox.checked == true) {
         pixel.fillStyle = 'white';
     }
     else {
-        pixel.fillStyle = 'black';
+        //pixel.fillStyle = 'black';
+        pixel.fillStyle = colorpicker.value;
     }
 
     pixel.fillRect(x, y, slider.value, slider.value);
@@ -65,7 +69,6 @@ function draw(event) {
     const rightPixelX = canvas.width - x;
     pixel.save();
     pixel.scale(-1, 1);
-    pixel.fillStyle = 'black';
     pixel.fillRect(-rightPixelX, y, slider.value, slider.value);
     pixel.restore();
 }
