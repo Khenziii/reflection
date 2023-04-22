@@ -10,8 +10,6 @@ const checkbox = document.getElementById('checkbox');
 const thirdUI = document.getElementById('thirdUI');
 
 function changepensize() {
-    const rect = firstUI.getBoundingClientRect();
-    slider.style.left = `calc(\${rect.left}px + \${rect.width / 2}px)`;
     slider.style.display = slider.style.display === 'none' ? 'block' : 'none';
 }
 
