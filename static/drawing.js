@@ -46,13 +46,15 @@ function draw(event) {
     if (!isDrawing) return;
 
     // Get the coordinates of the pixel that was clicked on the left side
-    const x = event.clientX - canvas.offsetLeft;
-    const y = event.clientY - canvas.offsetTop;
+    //const x = event.clientX - canvas.offsetLeft;
+    //const y = event.clientY - canvas.offsetTop;
+    const rect = canvas.getBoundingClientRect()
+
+    const x = event.clientX - rect.left - slider.value / 2;
+    const y = event.clientY - rect.top - slider.value / 2;
 
     // Update the pixel's background color to black on the left side
     const pixel = canvas.getContext('2d');
-
-    //if
 
     //console.log(checkbox.checked)
     if (checkbox.checked == true) {

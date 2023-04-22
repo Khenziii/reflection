@@ -1,6 +1,9 @@
 ## The Overall view
 //finish this later :)
 
+## Important Notes
+please note that i am not an web dev, infact i rarely use html, css & js.
+
 ## Contact
 
 you can find the developer of this project (aka "Khenzii" :>) here: discord - Khenzii#0949
