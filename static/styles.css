@@ -27,31 +27,54 @@
     bottom: 1vw;
     border: 1px solid black;
     padding: 5px;
-    
+
     background-color: white;
     z-index: 1;
 }
 
 .sliders {
+    /*
     display: none;
     position: fixed;
     left: 5vw;
     transform: translateX(-50%);
     top: -1vw;
+    */
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
 }
 
 .checkboxs {
+    /*
     display: none;
     position: fixed;
     top: -1vw;
     left: 22vw;
+    */
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
 }
 
 .colors-pickers {
+    /*
     display: none;
     position: fixed;
     top: -1.5vw;
     left: 12.5vw;
+    */
+
+    display: none;
+    position: absolute;
+    top: -20px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 50%;
 }
 
 .github {
@@ -64,6 +87,6 @@
     top: 1vw;
     border: 1px solid black;
     padding: 5px;
-    
+
     background-color: white;
 }
