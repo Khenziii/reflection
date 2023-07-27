@@ -10,15 +10,15 @@ const checkbox = document.getElementById('checkbox');
 const thirdUI = document.getElementById('thirdUI');
 
 function changepensize() {
-    slider.style.display = slider.style.display === 'none' ? 'block' : 'none';
+    slider.style.display === 'none' ? 'block' : 'none';
 }
 
 function changepencolor() {
-    colorpicker.style.display = colorpicker.style.display === 'none' ? 'block' : 'none';
+    colorpicker.style.display === 'none' ? 'block' : 'none';
 }
 
 function rubber() {
-    checkbox.style.display = checkbox.style.display === 'none' ? 'block' : 'none';
+    checkbox.style.display === 'none' ? 'block' : 'none';
 }
 
 canvas.width = canvas.offsetWidth;
