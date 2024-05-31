@@ -39,9 +39,9 @@ jobs:
           push: true
           tags: khenzii/reflection:latest
 
-      - name: Trigger Deployment Webhook
-        run: |
-          curl -X POST -d {} "${{ secrets.DEPLOY_WEBHOOK_URL }}" -H "Content-Type: application/json"
+      # - name: Trigger Deployment Webhook
+      #   run: |
+      #     curl -X POST -d {} "${{ secrets.DEPLOY_WEBHOOK_URL }}" -H "Content-Type: application/json"
 
       - name: Update Deployment Status
         uses: bobheadxi/deployments@v1
